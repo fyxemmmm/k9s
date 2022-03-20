@@ -16,7 +16,7 @@ func NewForConfig(config *rest.Config) (*AppsV1Client, error) {
 }
 
 func (c *AppsV1Client) Deployments() DeploymentInterface {
-	return newDeployments()
+	return newDeployments(c)
 }
 
 func (c *AppsV1Client) RestClient() rest.Interface {
