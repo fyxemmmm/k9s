@@ -1,0 +1,1 @@
+module "github.com/fyxemmmm/k9s"
